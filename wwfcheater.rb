@@ -17,6 +17,5 @@ end
 if __FILE__ == $0
   puts "Finding matches for " + ARGV[0]
   cheater = WWFCheater.new
-  puts "Using " + cheater.dictionary
   cheater.matches(ARGV[0]).each { |w| puts w }
 end
